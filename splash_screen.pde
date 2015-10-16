@@ -29,7 +29,7 @@ void drawBg() {
   shape(logo, 75, 175);
   fill(255); 
   noStroke();
-  text("Setting up the\n Arduino Software", 100, 360);
+  text("Splash Screen Demo!", 100, 360);
   rect(2*width/3, 0, width, height);
   image(img, 2*width/3, 50, 400, 400);
 }
