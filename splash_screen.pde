@@ -1,3 +1,15 @@
+/*  The MadMaker video splash screen.
+
+    Run the code in processing to generate .tif images 
+
+    To make into an mp4 video, install imagemagick and run:
+    > convert -quality 95 *.tif output.mp4
+    
+    Author: Owen Brasier
+    Date: September 2015
+*/
+
+
 PShape logo;
 PFont font;
 PImage img;
@@ -18,7 +30,7 @@ int count = 0;
 void draw() {
   drawone();
   drawtwo();
-  saveFrame();
+  //saveFrame("output-######.jpg"); // jpg for low file size, use lossless format if you actually make animations
   if(count >= 95) {
     exit();
   }
